@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/leiss-portfolio/static/css/main.9c5f291c.css",
+    "main.js": "/leiss-portfolio/static/js/main.0f5b05f6.js",
+    "static/media/services-background 1.jpg": "/leiss-portfolio/static/media/services-background 1.1b9f930cc06f00f0a094.jpg",
+    "static/media/hero.jpg": "/leiss-portfolio/static/media/hero.d3c475441abc49b18fcc.jpg",
+    "static/media/paper-flip-projects.png": "/leiss-portfolio/static/media/paper-flip-projects.cef0d100084323cac004.png",
+    "static/media/web-portfolio-project 2.png": "/leiss-portfolio/static/media/web-portfolio-project 2.8876a6a570d92c14e965.png",
+    "static/media/footer-logo.svg": "/leiss-portfolio/static/media/footer-logo.ff0fe19604961565ae374edb22d8354e.svg",
+    "static/media/bookeeping 1.png": "/leiss-portfolio/static/media/bookeeping 1.21d5c6831c65f344d57b.png",
+    "static/media/logo+text.svg": "/leiss-portfolio/static/media/logo+text.c6bd73a371cdc6dc5aeab05d78d20212.svg",
+    "static/media/logo2.svg": "/leiss-portfolio/static/media/logo2.3834d5e1af37f4fcdbea6be97661495f.svg",
+    "index.html": "/leiss-portfolio/index.html",
+    "main.9c5f291c.css.map": "/leiss-portfolio/static/css/main.9c5f291c.css.map",
+    "main.0f5b05f6.js.map": "/leiss-portfolio/static/js/main.0f5b05f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c5f291c.css",
+    "static/js/main.0f5b05f6.js"
+  ]
+}
