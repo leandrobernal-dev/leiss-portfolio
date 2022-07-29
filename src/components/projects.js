@@ -29,7 +29,10 @@ export default function Projects() {
               </div>
             </div>
             <div className="project-image">
-              <img src={webPortfolio} />
+              <img
+                alt="front-end developer portfolio web UI UX designer"
+                src={webPortfolio}
+              />
             </div>
           </div>
 
@@ -48,7 +51,7 @@ export default function Projects() {
               </div>
             </div>
             <div className="project-image">
-              <img src={bookeepingProject} />
+              <img alt="bookeeping website portfolio" src={bookeepingProject} />
             </div>
           </div>
 
@@ -68,7 +71,10 @@ export default function Projects() {
               </div>
             </div>
             <div className="project-image">
-              <img src={paperFlip} />
+              <img
+                alt="personal project, meme generator, inspirational generator"
+                src={paperFlip}
+              />
             </div>
           </div>
         </div>

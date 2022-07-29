@@ -1,4 +1,3 @@
-import logo from "../assets/images/logo+text.svg";
 import ScrollToElement from "./scrollToElement";
 
 export default function Home() {
@@ -17,7 +16,7 @@ export default function Home() {
                 I am <span>Lian</span>
               </h2>
               <h3 className="job-text">
-                Web developer <span>|</span> Web designer
+                Front-end Developer <span>|</span> Web UI designer
               </h3>
             </div>
             <div className="home-logo-parent">
