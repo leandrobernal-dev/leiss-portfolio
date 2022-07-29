@@ -46,7 +46,7 @@ export default function Services() {
                     GET IT NOW
                   </a>
                   <a
-                    href="https://www.fiverr.com/share/3axGAA"
+                    href="https://www.fiverr.com/share/06Zr7k"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -67,7 +67,7 @@ export default function Services() {
                     GET IT NOW
                   </a>
                   <a
-                    href="https://www.fiverr.com/share/3axGAA"
+                    href="https://www.fiverr.com/share/Z23NEl"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -89,7 +89,7 @@ export default function Services() {
                     GET IT NOW
                   </a>
                   <a
-                    href="https://www.fiverr.com/share/3axGAA"
+                    href="https://www.fiverr.com/share/BWzKBk"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -110,7 +110,7 @@ export default function Services() {
                     GET IT NOW
                   </a>
                   <a
-                    href="https://www.fiverr.com/share/3axGAA"
+                    href="https://www.fiverr.com/share/pBmydp"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
