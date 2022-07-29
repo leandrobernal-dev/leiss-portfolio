@@ -1,0 +1,23 @@
+footer {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-column {
+  width: 90%;
+  max-width: 1200px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.footer-column * {
+  color: white;
+}
+
+.copywrite {
+  padding-top: 20px;
+  font-weight: 100;
+}

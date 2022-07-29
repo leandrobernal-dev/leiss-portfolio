@@ -1,0 +1,96 @@
+.projects {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.projects-column {
+  width: 90%;
+  max-width: 1200px;
+}
+.projects-column * {
+  color: white;
+}
+
+.projects-head-text {
+  color: var(--green);
+  padding-bottom: 50px;
+  font-size: 1rem;
+  font-weight: 100;
+}
+.projects-head-text2 {
+  font-size: 2rem;
+  font-weight: 100;
+  padding-bottom: 40px;
+}
+.projects-head-text2 span {
+  color: var(--green);
+}
+
+/* Projects Container */
+/* Projects Container */
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Bookeeping Project */
+.bookeeping-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 630px;
+}
+.bookeeping-project .project-description {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.bookeeping-project h2 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  max-width: 400px;
+}
+.bookeeping-project h4 {
+  font-weight: 100;
+  max-width: 400px;
+}
+
+.project-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.project-image img {
+  width: 100%;
+  max-width: 332px;
+}
+
+@media (min-width: 700px) {
+  .projects-container {
+  }
+  .bookeeping-project .project-description {
+    justify-content: left;
+  }
+  .projects-head-text2 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .project-image {
+    justify-content: right;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bookeeping-project {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .bookeeping-project {
+    max-width: 800px;
+  }
+}

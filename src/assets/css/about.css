@@ -1,0 +1,195 @@
+.about {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+.about-column {
+  width: 90%;
+  max-width: 1200px;
+}
+.about-column * {
+  color: white;
+}
+
+.about-me-head {
+  color: var(--green);
+  padding-bottom: 50px;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Top Content */
+.top-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.top-content h1 {
+  font-size: 2rem;
+  color: white;
+  padding-bottom: 20px;
+}
+.top-content h1 span {
+  color: var(--green);
+}
+.gears {
+  /* font-size: 300px; */
+  font-size: 30vw;
+  /* display: none; */
+  color: var(--green);
+}
+.top-content a {
+  background-color: var(--green);
+  color: black;
+  font-weight: 700;
+  width: 150px;
+  text-align: center;
+  padding: 10px 0;
+  display: block;
+  margin-top: 20px;
+  border-radius: 2px;
+}
+.top-content a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Web feat */
+.web-feat-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.compass {
+  color: var(--green);
+  font-size: 250px;
+  font-size: max(10vw, 290px);
+  display: none;
+}
+
+/* Web development */
+.web-development-content {
+  max-width: 300px;
+}
+.web-development-head {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.web-development-head i {
+  color: var(--green);
+  font-size: 3.5rem;
+}
+.web-development-content h4 {
+  font-weight: 100;
+}
+.web-development-feat {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+}
+.web-development-feat * {
+  font-weight: 100;
+  color: var(--green);
+}
+.web-development-feat span {
+  color: white;
+}
+
+/* Web Design */
+.web-design-content {
+  max-width: 300px;
+}
+.web-design-head {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.web-design-head i {
+  color: var(--green);
+  font-size: 3.5rem;
+}
+.web-design-content h4 {
+  font-weight: 100;
+}
+.web-design-feat {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+}
+.web-design-feat * {
+  font-weight: 100;
+  color: var(--green);
+}
+.web-design-feat span {
+  color: white;
+}
+
+/* My skills */
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+}
+.skills h3 {
+  font-size: 1.4rem;
+  font-weight: 100;
+  color: var(--green);
+}
+.skills-container {
+  display: flex;
+  gap: 10px;
+}
+.skills-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-container p {
+  color: var(--green);
+  font-weight: 100;
+  font-size: 0.75rem;
+}
+.skills-container i {
+  color: var(--green);
+  font-size: 4rem;
+}
+
+@media (min-width: 850px) {
+  .top-content {
+    flex-direction: row;
+  }
+  .top-content h1 {
+    font-size: 3rem;
+  }
+  .gears,
+  .compass {
+    display: block;
+  }
+}
+@media (min-width: 650px) {
+  .web-feat-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .top-content h1 {
+    font-size: 2.5rem;
+  }
+  .gears {
+    font-size: max(300px);
+  }
+}

@@ -1,0 +1,107 @@
+@import url("index.css");
+
+header {
+  /* background-color: lightcoral; */
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+nav {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  width: 4rem;
+}
+
+menu {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  height: 200px;
+
+  /* display: none; */
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: 0.15s;
+}
+menu ul {
+  height: 100%;
+  background-color: var(--green);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+menu ul li a {
+  color: black;
+}
+.menu-btn {
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+.menu-btn:hover {
+  color: var(--green);
+}
+
+.show-menu {
+  transform: scaleY(1);
+}
+
+.active-nav {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+@media (min-width: 820px) {
+  .menu-btn {
+    display: none;
+  }
+  menu {
+    position: static;
+    transform: scale(1);
+    height: auto;
+  }
+  menu ul {
+    background-color: transparent;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0;
+  }
+  menu ul li a {
+    color: white;
+  }
+  .active-nav {
+    color: var(--green);
+    border-bottom: 2px solid var(--green);
+  }
+}
+
+.fixed-header {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: rollDown 0.15s;
+}
+
+@keyframes rollDown {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 0;
+  }
+}

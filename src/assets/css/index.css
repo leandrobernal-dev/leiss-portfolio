@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet");
+:root {
+  --green: #00ffb2;
+  --light-gray: #242424;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  text-decoration: none;
+
+  font-family: "Poppins";
+}
+
+body {
+  background-color: black;
+}

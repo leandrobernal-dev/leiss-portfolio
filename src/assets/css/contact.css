@@ -1,0 +1,131 @@
+.contact {
+  background-color: var(--light-gray);
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+.contact * {
+  color: white;
+}
+
+.contact-column {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Head Text */
+/* Head Text */
+.contact-head-text {
+  color: var(--green);
+  padding-bottom: 50px;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+/* Contact Content */
+/* Contact Content */
+.contact-content {
+  display: grid;
+  grid-template-rows: 1fr 1.5fr;
+}
+.contact-content .contact-col-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-content .contact-col-1 h1 {
+  font-size: 2.5rem;
+}
+.contact-content .contact-col-1 h3,
+.contact-content .contact-col-1 h2 {
+  font-weight: 100;
+}
+.contact-content .contact-col-1 h2 span {
+  color: var(--green);
+}
+.contact-content .contact-col-1 h1 span {
+  color: var(--green);
+}
+
+.fiverr-link-btn {
+  background-color: var(--green);
+  color: black;
+  font-weight: 700;
+  width: 200px;
+  padding: 10px 0;
+  text-align: center;
+}
+.fiverr-link-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Contact Form */
+.contact-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 40px;
+}
+.contact-content form input,
+.contact-content form textarea {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border: 1px solid white;
+  padding: 10px 0 0 10px;
+}
+.contact-content form .your-name {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.contact-content form .your-name * {
+  width: 100%;
+}
+.contact-content form input {
+  min-height: 3rem;
+}
+.contact-content form .message-input {
+  height: 300px;
+  resize: vertical;
+}
+.submit-button-container {
+  display: flex;
+  justify-content: right;
+}
+.submit-button-container button {
+  background-color: var(--green);
+  border: none;
+  padding: 10px 30px;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.submit-button-container button:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (min-width: 700px) {
+  .contact-content .contact-col-1 h1 {
+    font-size: 3rem;
+    max-width: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  .contact-content {
+    grid-template-rows: none;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+  }
+  .contact-content form {
+    padding-top: 0;
+  }
+  .contact-content .contact-col-1 {
+    height: 80%;
+  }
+}
