@@ -13,7 +13,6 @@ export default function Header() {
   }
 
   window.addEventListener("scroll", () => {
-    console.log(window.scrollY);
     if (window.scrollY > 70) {
       $("header")[0].classList.add("fixed-header");
     } else {
@@ -24,22 +23,21 @@ export default function Header() {
   const [scroll, setScroll] = React.useState(window.scrollY);
   React.useEffect(() => {
     const sections = document.querySelectorAll("section");
+    console.log(sections);
     const links = document.querySelectorAll("nav a");
-    if (window.location.pathname === "/") {
-      sections.forEach((section) => {
-        const pos = section.getBoundingClientRect().y;
-        const offset = section.offsetHeight / 2;
+    sections.forEach((section) => {
+      const pos = section.getBoundingClientRect().y;
+      const offset = section.offsetHeight / 2;
 
-        if (pos < offset) {
-          links.forEach((link) => {
-            link.classList.remove("active-nav");
-            if (link.getAttribute("href") === "#" + section.id) {
-              link.classList.add("active-nav");
-            }
-          });
-        }
-      });
-    }
+      if (pos < offset) {
+        links.forEach((link) => {
+          link.classList.remove("active-nav");
+          if (link.getAttribute("href") === "#" + section.id) {
+            link.classList.add("active-nav");
+          }
+        });
+      }
+    });
   }, [scroll]);
 
   window.onscroll = () => {
