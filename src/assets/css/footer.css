@@ -8,16 +8,25 @@ footer {
   width: 90%;
   max-width: 1200px;
 }
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
 .footer-column * {
   color: white;
 }
-
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+.footer-logo {
+  max-width: 220px;
+}
 .copywrite {
   padding-top: 20px;
   font-weight: 100;
+}
+
+@media (min-width: 450px) {
+  .footer-content {
+    flex-direction: row;
+  }
 }

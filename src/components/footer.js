@@ -6,7 +6,7 @@ export default function Footer() {
     <footer>
       <div className="footer-column">
         <div className="footer-content">
-          <img src={logo} />
+          <img className="footer-logo" src={logo} />
           <div className="footer-nav">
             <h3>EXPLORE</h3>
             <ul>
