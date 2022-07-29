@@ -20,7 +20,9 @@ export default function Projects() {
               <div>
                 <h2>Web Development Portfolio</h2>
                 <br />
-                <h4>My personal Web developmen and web design portfolio.</h4>
+                <h4>
+                  My personal Web development and web design services portfolio.
+                </h4>
                 <p>
                   Built using: html5, css3, javascript es6, react-js, j-query
                 </p>
