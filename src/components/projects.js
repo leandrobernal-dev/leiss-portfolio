@@ -1,8 +1,53 @@
-import bookeepingProject from "../assets/images/bookeeping 1.png";
-import webPortfolio from "../assets/images/web-portfolio-project 2.png";
-import paperFlip from "../assets/images/paper-flip-projects.png";
+import React from "react";
 
 export default function Projects() {
+  const projects = [
+    {
+      name: "Web Development Portfolio",
+      description:
+        "My personal Web development and web design services portfolio.",
+      tools: "Built using: html5, css3, javascript es6, react-js, j-query",
+      image: "web-portfolio-project 2.png",
+      imageAlt: "front-end developer portfolio web UI UX designer",
+    },
+    {
+      name: "Bookeeping Services Portfolio",
+      description: "A bookeeping services company website portfolio.",
+      tools:
+        "Built using: html5, css3 || tailwind-css, javascript es6,react-js, j-query",
+      image: "bookeeping 1.png",
+      imageAlt: "bookeeping website portfolio",
+    },
+    {
+      name: "Paper-flip",
+      description: "My meme and inspirational images generator.",
+      tools:
+        " Built using: html5, css3 || sass, javascript es6, react-js, j-query",
+      image: "paper-flip-projects.png",
+      imageAlt: "personal project, meme generator, inspirational generator",
+      api: "pexels-api, img-flip api",
+    },
+  ];
+  const projectsElements = projects.map((project) => {
+    return (
+      <div className="bookeeping-project">
+        <div className="project-description">
+          <div>
+            <h2>{project.name}</h2>
+            <br />
+            <h4>{project.description}</h4>
+            <p>{project.tools}</p>
+          </div>
+        </div>
+        <div className="project-image">
+          <img
+            alt={project.imageAlt}
+            src={require(`../assets/images/${project.image}`)}
+          />
+        </div>
+      </div>
+    );
+  });
   return (
     <section id="projects" className="projects">
       <div className="projects-column">
@@ -15,68 +60,7 @@ export default function Projects() {
         <div className="projects-container">
           {/*  */}
           {/*  */}
-          <div className="bookeeping-project">
-            <div className="project-description">
-              <div>
-                <h2>Web Development Portfolio</h2>
-                <br />
-                <h4>
-                  My personal Web development and web design services portfolio.
-                </h4>
-                <p>
-                  Built using: html5, css3, javascript es6, react-js, j-query
-                </p>
-              </div>
-            </div>
-            <div className="project-image">
-              <img
-                alt="front-end developer portfolio web UI UX designer"
-                src={webPortfolio}
-              />
-            </div>
-          </div>
-
-          {/*  */}
-          {/*  */}
-          <div className="bookeeping-project">
-            <div className="project-description">
-              <div>
-                <h2>Bookeeping Services Portfolio</h2>
-                <br />
-                <h4>A bookeeping services company website portfolio.</h4>
-                <p>
-                  Built using: html5, css3 || tailwind-css, javascript es6,
-                  react-js, j-query
-                </p>
-              </div>
-            </div>
-            <div className="project-image">
-              <img alt="bookeeping website portfolio" src={bookeepingProject} />
-            </div>
-          </div>
-
-          {/*  */}
-          {/*  */}
-          <div className="bookeeping-project">
-            <div className="project-description">
-              <div>
-                <h2>Paper-flip</h2>
-                <br />
-                <h4>My meme and inspirational images generator.</h4>
-                <p>
-                  Built using: html5, css3 || sass, javascript es6, react-js,
-                  j-query
-                </p>
-                <p>Api: pexels-api, img-flip api</p>
-              </div>
-            </div>
-            <div className="project-image">
-              <img
-                alt="personal project, meme generator, inspirational generator"
-                src={paperFlip}
-              />
-            </div>
-          </div>
+          {projectsElements}
         </div>
       </div>
     </section>

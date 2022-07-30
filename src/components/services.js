@@ -1,6 +1,76 @@
 import ScrollToElement from "./scrollToElement";
 
 export default function Services() {
+  const services = [
+    {
+      name: "PORTFOLIO WEBSITE",
+      offers: [
+        "Design Customization",
+        "Content upload",
+        "Responsive website",
+        "Include source code",
+        "Unlimited Revisions",
+      ],
+      fiverrLink: "https://www.fiverr.com/share/06Zr7k",
+    },
+    {
+      name: "PORTFOLIO DESIGN",
+      offers: [
+        "Design Customization",
+        "Desktop and Mobile",
+        "Responsive website",
+        "Include source file",
+        "Unlimited Revisions",
+      ],
+      fiverrLink: "https://www.fiverr.com/share/Z23NEl",
+    },
+    {
+      name: "BLOG WEBSITE",
+      offers: [
+        "Design Customization",
+        "Content upload",
+        "Responsive website",
+        "Include source code",
+        "Unlimited Revisions",
+      ],
+      fiverrLink: "https://www.fiverr.com/share/BWzKBk",
+    },
+    {
+      name: "BLOG DESIGN",
+      offers: [
+        "Design Customization",
+        "Desktop and Mobile",
+        "Responsive website",
+        "Include source file",
+        "Unlimited Revisions",
+      ],
+      fiverrLink: "https://www.fiverr.com/share/pBmydp",
+    },
+  ];
+  const servicesElements = services.map((service) => {
+    return (
+      <div className="services-services">
+        <h2>{service.name}</h2>
+        <div className="offers">
+          {service.offers.map((offer) => {
+            return <h4> &#x2713;{offer}</h4>;
+          })}
+        </div>
+        <div className="services-buttons">
+          <a onClick={ScrollToElement} href="#contact">
+            GET IT NOW
+          </a>
+          <a
+            href={service.fiverrLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GET IT ON FIVERR
+          </a>
+        </div>
+      </div>
+    );
+  });
   return (
     <section id="services" className="services">
       <div className="services-background"></div>
@@ -31,94 +101,7 @@ export default function Services() {
 
           {/*  */}
           <div className="services-container-parent">
-            <div className="services-container">
-              <div className="services-services">
-                <h2>PORTFOLIO WEBSITE</h2>
-                <div className="offers">
-                  <h4> &#x2713;Design Customization</h4>
-                  <h4> &#x2713;Content upload</h4>
-                  <h4> &#x2713;Responsive design</h4>
-                  <h4> &#x2713;Include source code</h4>
-                  <h4> &#x2713;Unlimited Revisions</h4>
-                </div>
-                <div className="services-buttons">
-                  <a onClick={ScrollToElement} href="#contact">
-                    GET IT NOW
-                  </a>
-                  <a
-                    href="https://www.fiverr.com/share/06Zr7k"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GET IT ON FIVERR
-                  </a>
-                </div>
-              </div>
-              <div className="services-services">
-                <h2>PORTFOLIO DESIGN</h2>
-                <div className="offers">
-                  <h4> &#x2713;Design Customization</h4>
-                  <h4> &#x2713;Desktop &#x26; Mobile</h4>
-                  <h4> &#x2713;Include source file</h4>
-                  <h4> &#x2713;Unlimited Revisions</h4>
-                </div>
-                <div className="services-buttons">
-                  <a onClick={ScrollToElement} href="#contact">
-                    GET IT NOW
-                  </a>
-                  <a
-                    href="https://www.fiverr.com/share/Z23NEl"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GET IT ON FIVERR
-                  </a>
-                </div>
-              </div>
-              <div className="services-services">
-                <h2>BLOG WEBSITE</h2>
-                <div className="offers">
-                  <h4> &#x2713;Design Customization</h4>
-                  <h4> &#x2713;Content upload</h4>
-                  <h4> &#x2713;Responsive design</h4>
-                  <h4> &#x2713;Include source code</h4>
-                  <h4> &#x2713;Unlimited Revisions</h4>
-                </div>
-                <div className="services-buttons">
-                  <a onClick={ScrollToElement} href="#contact">
-                    GET IT NOW
-                  </a>
-                  <a
-                    href="https://www.fiverr.com/share/BWzKBk"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GET IT ON FIVERR
-                  </a>
-                </div>
-              </div>{" "}
-              <div className="services-services">
-                <h2>BLOG DESIGN</h2>
-                <div className="offers">
-                  <h4> &#x2713;Design Customization</h4>
-                  <h4> &#x2713;Desktop &#x26; Mobile</h4>
-                  <h4> &#x2713;Include source file</h4>
-                  <h4> &#x2713;Unlimited Revisions</h4>
-                </div>
-                <div className="services-buttons">
-                  <a onClick={ScrollToElement} href="#contact">
-                    GET IT NOW
-                  </a>
-                  <a
-                    href="https://www.fiverr.com/share/pBmydp"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    GET IT ON FIVERR
-                  </a>
-                </div>
-              </div>{" "}
-            </div>
+            <div className="services-container">{servicesElements}</div>
           </div>
         </div>
       </div>

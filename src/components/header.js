@@ -23,7 +23,6 @@ export default function Header() {
   const [scroll, setScroll] = React.useState(window.scrollY);
   React.useEffect(() => {
     const sections = document.querySelectorAll("section");
-    console.log(sections);
     const links = document.querySelectorAll("nav a");
     sections.forEach((section) => {
       const pos = section.getBoundingClientRect().y;
@@ -46,7 +45,7 @@ export default function Header() {
   return (
     <header>
       <nav>
-        <img className="logo" src={logo} />
+        <img alt="leiss designs logo" className="logo" src={logo} />
         <menu>
           <ul>
             <li>
