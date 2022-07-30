@@ -37,6 +37,7 @@ export default function Projects() {
             <br />
             <h4>{project.description}</h4>
             <p>{project.tools}</p>
+            <p>{project.api ? `Api: ${project.api}` : ""}</p>
           </div>
         </div>
         <div className="project-image">
