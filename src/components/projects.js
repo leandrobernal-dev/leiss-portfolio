@@ -65,7 +65,7 @@ export default function Projects() {
         if (isVisible(image)) {
           image.classList.add("move-project-image-left");
         }
-      }, index * 100);
+      }, index * 200);
     });
   });
   return (

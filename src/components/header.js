@@ -12,16 +12,15 @@ export default function Header() {
     setMenuShow(!menuShow);
   }
 
-  window.addEventListener("scroll", () => {
+  const [scroll, setScroll] = React.useState(window.scrollY);
+  React.useEffect(() => {
     if (window.scrollY > 70) {
       $("header")[0].classList.add("fixed-header");
+      // console.log(70);
     } else {
       $("header")[0].classList.remove("fixed-header");
     }
-  });
 
-  const [scroll, setScroll] = React.useState(window.scrollY);
-  React.useEffect(() => {
     const sections = document.querySelectorAll("section");
     const links = document.querySelectorAll("nav a");
     sections.forEach((section) => {
