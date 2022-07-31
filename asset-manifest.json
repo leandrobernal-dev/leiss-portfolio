@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/leiss-portfolio/static/css/main.74cc86ab.css",
-    "main.js": "/leiss-portfolio/static/js/main.eebcc3cf.js",
+    "main.css": "/leiss-portfolio/static/css/main.fdfa3e18.css",
+    "main.js": "/leiss-portfolio/static/js/main.c9a862bd.js",
     "static/media/services-background 1.jpg": "/leiss-portfolio/static/media/services-background 1.1b9f930cc06f00f0a094.jpg",
     "static/media/hero.jpg": "/leiss-portfolio/static/media/hero.d3c475441abc49b18fcc.jpg",
     "static/media/paper-flip-projects.png": "/leiss-portfolio/static/media/paper-flip-projects.cef0d100084323cac004.png",
@@ -10,11 +10,11 @@
     "static/media/bookeeping 1.png": "/leiss-portfolio/static/media/bookeeping 1.21d5c6831c65f344d57b.png",
     "static/media/logo2.svg": "/leiss-portfolio/static/media/logo2.5c45bcfad17ce0459835d999b01a9307.svg",
     "index.html": "/leiss-portfolio/index.html",
-    "main.74cc86ab.css.map": "/leiss-portfolio/static/css/main.74cc86ab.css.map",
-    "main.eebcc3cf.js.map": "/leiss-portfolio/static/js/main.eebcc3cf.js.map"
+    "main.fdfa3e18.css.map": "/leiss-portfolio/static/css/main.fdfa3e18.css.map",
+    "main.c9a862bd.js.map": "/leiss-portfolio/static/js/main.c9a862bd.js.map"
   },
   "entrypoints": [
-    "static/css/main.74cc86ab.css",
-    "static/js/main.eebcc3cf.js"
+    "static/css/main.fdfa3e18.css",
+    "static/js/main.c9a862bd.js"
   ]
 }
