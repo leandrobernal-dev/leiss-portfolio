@@ -49,6 +49,25 @@ export default function Projects() {
       </div>
     );
   });
+
+  window.addEventListener("scroll", () => {
+    function isVisible(ele) {
+      const { top, bottom } = ele.getBoundingClientRect();
+      const vHeight =
+        window.innerHeight || document.documentElement.clientHeight;
+
+      return (top > 0 || bottom > 0) && top < vHeight;
+    }
+    const projectImage = document.querySelectorAll(".project-image");
+
+    projectImage.forEach((image, index) => {
+      setTimeout(() => {
+        if (isVisible(image)) {
+          image.classList.add("move-project-image-left");
+        }
+      }, index * 100);
+    });
+  });
   return (
     <section id="projects" className="projects">
       <div className="projects-column">

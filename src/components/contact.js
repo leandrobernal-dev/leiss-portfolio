@@ -1,8 +1,38 @@
 import emailjs from "@emailjs/browser";
+import $ from "jquery";
 
 export default function Contact() {
   function sendEmail(e) {
     e.preventDefault();
+    const firstname = $(".firstname")[0];
+    const lastname = $(".lastname")[0];
+    const email = $(".email")[0];
+    const message = $(".message")[0];
+
+    if (firstname.value < 1) {
+      firstname.classList.add("error");
+      return;
+    } else {
+      firstname.classList.remove("error");
+    }
+    if (lastname.value < 1) {
+      lastname.classList.add("error");
+      return;
+    } else {
+      lastname.classList.remove("error");
+    }
+    if (email.value < 5) {
+      email.classList.add("error");
+      return;
+    } else {
+      email.classList.remove("error");
+    }
+    if (message.value < 1) {
+      message.classList.add("error");
+      return;
+    } else {
+      message.classList.remove("error");
+    }
 
     emailjs
       .sendForm(
@@ -58,22 +88,24 @@ export default function Contact() {
                 placeholder="First Name"
                 type="name"
                 name="firstname"
+                className="firstname"
               ></input>
               <input
                 placeholder="Last Name"
                 type="name"
                 name="lastname"
+                className="lastname"
               ></input>
             </div>
             <input
-              className="email-input "
+              className="email-input email"
               placeholder="Your Email"
               type="email"
               name="email"
             ></input>
 
             <textarea
-              className="message-input "
+              className="message-input message"
               name="message"
               placeholder="Your Message"
             ></textarea>

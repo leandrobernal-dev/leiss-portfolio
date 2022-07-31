@@ -1,6 +1,15 @@
 import ScrollToElement from "./scrollToElement";
+import $ from "jquery";
+import React from "react";
 
 export default function Home() {
+  React.useEffect(() => {
+    const animatingText = $(".name-text")[0];
+    const aboutBtn = $(".about-me-btn")[0];
+    animatingText.addEventListener("animationend", () => {
+      aboutBtn.classList.add("about-btn-to-right");
+    });
+  }, []);
   return (
     <section id="home" className="home">
       <div className="hero">

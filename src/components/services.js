@@ -1,4 +1,6 @@
 import ScrollToElement from "./scrollToElement";
+import $ from "jquery";
+import React from "react";
 
 export default function Services() {
   const services = [
@@ -71,6 +73,24 @@ export default function Services() {
       </div>
     );
   });
+
+  window.addEventListener("scroll", () => {
+    function isVisible(ele) {
+      const { top, bottom } = ele.getBoundingClientRect();
+      const vHeight =
+        window.innerHeight || document.documentElement.clientHeight;
+      return (top > 0 || bottom > 0) && top < vHeight;
+    }
+
+    const servicesContainer = $(".services-container")[0];
+    const servicesButton = $(".services-head button")[0];
+
+    if (isVisible(servicesButton)) {
+      servicesContainer.classList.add("ani");
+      servicesButton.classList.add("move-button-right");
+    }
+  });
+
   return (
     <section id="services" className="services">
       <div className="services-background"></div>
